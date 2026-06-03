@@ -577,6 +577,12 @@ img {
   color: var(--muted);
 }
 
+.detail-card > p {
+  margin: 0;
+  padding: 16px 18px 0;
+  color: var(--muted);
+}
+
 .year-block li,
 .detail-card li {
   margin: 0 0 12px;
@@ -590,6 +596,36 @@ img {
 .year-block a,
 .detail-card a {
   color: var(--cyan);
+}
+
+.project-status-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 16px;
+  background: var(--line);
+  border-top: 1px solid var(--line);
+}
+
+.project-status {
+  background: var(--panel);
+}
+
+.project-status h4 {
+  margin: 0;
+  padding: 14px 18px 0;
+  color: var(--lime);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.project-status--completed h4 {
+  color: var(--blue);
+}
+
+.project-status ul {
+  padding-top: 12px;
 }
 
 .site-footer {
@@ -724,6 +760,10 @@ img {
     padding: 18px 0;
     border-right: 0;
     border-bottom: 1px solid var(--line);
+  }
+
+  .project-status-grid {
+    grid-template-columns: 1fr;
   }
 
   .section-heading {
